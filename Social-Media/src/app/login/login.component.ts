@@ -12,8 +12,7 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class LoginComponent {
   loginForm: FormGroup;
-  loginError: string |null=null;
-  
+  loginError: string  | null = null;
 
   constructor(private fb: FormBuilder, private http: HttpClient,private router: Router) {
     this.loginForm = this.fb.group({
@@ -38,7 +37,7 @@ export class LoginComponent {
         });
     }
   }
-
+    
   
 
 }
